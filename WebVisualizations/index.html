@@ -44,27 +44,50 @@
         </nav>
     </div>
 
-    <!--Main Homepage Content-->
-    <h1>Summary: Latitude vs. X</h1>
-    <hr>
-    <img src="visualizations/Fig1.png" alt="scatterplot of City Latitude vs. Max Temp" width="300" align="left">
-    <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-    <br>
-    <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
 
-    <!--Sidebar Content-->
+    <!--Main homepage content-->
 
-    <h2>Visualizations</h2>
-    <hr>
-
-    <a href="VisFig1.html"><img src="visualizations/Fig1.png" alt="scatterplot of City Latitude vs. Max Temp</a>
-
-    <a href="VisFig2.html"><img src="visualizations/Fig2.png" alt="scatterplot of City Latitude vs. Humidity</a>
-
-    <a href="VisFig3.html"><img src="visualizations/Fig3.png" alt="scatterplot of City Latitude vs. Cloudiness</a>
-
-    <a href="VisFig4.html"><img src="visualizations/Fig4.png" alt="scatterplot of City Latitude vs. Wind Speed</a>
-
+        <div class="container">    
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="col-md-12">
+                        <h1>Summary: Latitude vs. X </h1>
+                        <hr>
+                        <div class="thumbnail">
+                            <img class="img-thumbnail float-left" src="visualizations/Fig1.png" width="50%" alt="scatterplot of City Latitude vs. Max Temp">
+                        </div>
+                        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.  </p> 
+                        
+                        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                    </div>
+                </div>
+                
+                <!--Sidebar content-->
+                <div class="col-md-4">
+                    <div class="col-md-12">
+                        <h2>Visualizations</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="col-3 col-md-6">
+                                <a href="VisFig1.html"><img src="visualizations/Fig1.png" width="100%"  alt="scatterplot of City Latitude vs. Max Temp">
+                                </a> 
+                            </div>
+                            <div class="col-3 col-md-6">
+                                <a href="VisFig2.html"><img src="visualizations/Fig2.png" width="100%" alt="scatterplot of City Latitude vs. Humidity"></a>
+                            </div>
+                       
+                            <div class="col-3 col-md-6">
+                                <a href="VisFig3.html"><img src="visualizations/Fig3.png" width="100%"  alt="scatterplot of City Latitude vs. Cloudiness"></a>
+                            </div>
+    
+                            <div class="col-3 col-md-6">
+                                <a href="VisFig4.html"><img src="visualizations/Fig4.png"width="100%"  alt="scatterplot of City Latitude vs. Windspeed"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!--Footer Content-->
 
 
