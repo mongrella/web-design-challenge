@@ -11,11 +11,82 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<!--Max Temperature-->
+<body>
+    <!--Nav Bar-->
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" style="background-color: white;" href="index.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="visualizations/Fig1.png">Max Temperature</a>
+                            <a class="dropdown-item" href="visualizations/Fig2.png">Humidity</a>
+                            <a class="dropdown-item" href="visualizations/Fig3.png">Cloudiness</a>
+                            <a class="dropdown-item" href="visualizations/Fig4.png">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="table.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
 
 
 
+<!--Humidity-->
+<div class="container">    
+    <div class="row">
+        <div class="col-md-8">
+            <div class="col-md-12">
+                <h1>Humidity </h1>
+                <hr>
+                <div class="graph">
+                    <img class="img-graph float-left" src="visualizations/Fig2.png" width="50%" alt="scatterplot of City Latitude vs. Humidity">
+                </div>
+                <p>There seems to be no relationship between the two variables, as humidity looks fairly consistent across. If anything, there is a slight increase as you get further north. </p> 
+            </div>
+        </div>
+        
+        <!--Sidebar content-->
+        <div class="col-md-4">
+            <div class="col-md-12">
+                <div class="sidebar">
+                    <h2>Visualizations</h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-3 col-md-6">
+                            <a href="VisFig1.html"><img src="visualizations/Fig1.png" width="100%"  alt="scatterplot of City Latitude vs. Max Temp"></a> 
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href="VisFig2.html"><img class="img-border" src="visualizations/Fig2.png" width="100%" alt="scatterplot of City Latitude vs. Humidity"></a>
+                        </div>
+               
+                        <div class="col-3 col-md-6">
+                            <a href="VisFig3.html"><img src="visualizations/Fig3.png" width="100%"  alt="scatterplot of City Latitude vs. Cloudiness"></a>
+                        </div>
+
+                        <div class="col-3 col-md-6">
+                            <a href="VisFig4.html"><img src="visualizations/Fig4.png"width="100%"  alt="scatterplot of City Latitude vs. Windspeed"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--Footer Content-->
 
