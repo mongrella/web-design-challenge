@@ -1,7 +1,7 @@
 
   /*Body background*/
 body {
-    background-color: grey !important;
+    background-color: lightgrey !important;
 }
 
 
@@ -20,6 +20,10 @@ body {
     border-radius: 3px;
   }
 
+  a:hover {
+    background-color: lightgrey;
+  }
+
   /* Header stylings */
   h1 {
     padding: 50px;
@@ -36,8 +40,28 @@ body {
 
   /*content styling*/
   .container {
-      padding-top: 50px;
-      padding-bottom: 75px;
-      overflow: hidden;
-      background-color: white;
+    margin-top: 50px;  
+    padding-top: 40px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    background-color: white;
   }
+
+  .sidebar {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding: 10px 30px 10px;
+    color: #ffffff;
+    background-color: rgb(255, 255, 255);
+  }
+
+/*Footer styling*/
+.footer{
+  position: fixed;
+  margin-top: 100px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
