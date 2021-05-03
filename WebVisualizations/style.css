@@ -90,6 +90,10 @@ body {
 }
 
 /*Table Styling*/
+.table{
+  font-size: 15px;
+}
+
 
 /* screen adjustments*/
 @media(max-width:767px){
@@ -106,5 +110,8 @@ body {
 
   .dropdown-menu, navbarDropdownMenuLink{
     display: inline-block;
+  }
+  .table{
+    border: 1px solid lightgray;
   }
 }
