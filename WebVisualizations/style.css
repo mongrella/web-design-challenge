@@ -102,16 +102,37 @@ body {
 
 
 /* screen adjustments.*/
-@media(max-width:985px){
+@media(max-width:987px){
   .navbar.bg-light{
       background-color: rgb(20, 150, 150)!important;    
   }
 
   .navbar-collapse{
-      background-color:white;
+      background-color:white !important;
   }
+
+  a:hover {
+    background-color: lightgrey !important;
+  }
+
+/* Tried to change active Plots link to grey.*/
+  a:active {
+    color: #838383 !important;
+  }
+
   .navbar{
       padding:inherit;
+  }
+
+  /* Removed border in dropdown menu*/
+  .dropdown .dropdown-menu {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+  }
+
+  /*Changed font color in dropdown menu*/
+  .dropdown-menu .dropdown-item {
+    color: #838383;
   }
 
   .table{
