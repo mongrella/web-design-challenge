@@ -29,19 +29,22 @@ body {
     padding: 30px;
     margin: 0;
     color:rgb(20, 150, 150);
-    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold !important;
   }
 
   h2 {
     margin: 0;
     color:rgb(20, 150, 150);
-    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold !important;
   }
 
   h3 {
     margin: 0;
     color:rgb(20, 150, 150);
-    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold !important;
     text-align: center;
   }
 
@@ -70,7 +73,6 @@ body {
 
 /*Footer styling*/
 .footer{
-  position: fixed;
   margin-top: 100px;
   left: 0;
   bottom: 0;
@@ -95,10 +97,10 @@ body {
 }
 
 
-/* screen adjustments*/
-@media(max-width:767px){
+/* screen adjustments.*/
+@media(max-width:985px){
   .navbar.bg-light{
-      background-color: rgb(81, 175, 160)!important;    
+      background-color: rgb(20, 150, 150)!important;    
   }
 
   .navbar-collapse{
@@ -108,10 +110,19 @@ body {
       padding:inherit;
   }
 
-  .dropdown-menu, navbarDropdownMenuLink{
-    display: inline-block;
-  }
   .table{
     border: 1px solid lightgray;
   }
+ 
+  /* I tried a few different sources to get the hamburger menu to change color but unfortunately my code just did not work:
+  https://www.geeksforgeeks.org/how-to-change-hamburger-toggler-color-in-bootstrap/
+   https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color */
+
+  .custom-toggler.navbar-toggler{
+    border-color: white;
+  }
+  .navbar-toggler .line{
+    background-color: lightgray;
+  }
+
 }
